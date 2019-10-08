@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "120696712190",
+    "firebase_url": "https://roady-test.firebaseio.com",
+    "project_id": "roady-test",
+    "storage_bucket": "roady-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120696712190:android:b94f8495768115cd672eaf",
+        "android_client_info": {
+          "package_name": "com.wildbotlabs.roadytest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120696712190-ttcfdqj92a9vmnuocb75jkj60gigsga2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGdwlrHKnoTcYGCjGdzpKBM31D1o0xS6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120696712190-ttcfdqj92a9vmnuocb75jkj60gigsga2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
