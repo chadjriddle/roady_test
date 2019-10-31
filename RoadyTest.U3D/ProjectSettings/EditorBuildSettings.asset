@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_GameLogic/Scenes/DriveTest.unity
+    guid: f32410b0160d674479a8b3591e96bcb4
   m_configObjects: {}

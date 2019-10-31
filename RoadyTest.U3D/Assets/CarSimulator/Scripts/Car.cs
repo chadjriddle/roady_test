@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
+using WildbotLabs.Scriptables.References;
 
-public class Car : MonoBehaviour {
+public class Car : MonoBehaviour
+{
+
+    [SerializeField] private BoolReference InputRight;
+    [SerializeField] private BoolReference InputLeft;
 
 	[SerializeField]
 	bool IsPlayerControlled = false;
@@ -118,7 +122,7 @@ public class Car : MonoBehaviour {
 
 	void Awake() {
 
-		CameraView = GameObject.Find ("CameraView").gameObject;
+		//CameraView = GameObject.Find ("CameraView").gameObject;
 
 		Rigidbody2D = GetComponent<Rigidbody2D> ();
 		CenterOfGravity = transform.Find ("CenterOfGravity").gameObject;
@@ -179,10 +183,10 @@ public class Car : MonoBehaviour {
 			}
 
 			float steerInput = 0;
-			if(Input.GetKey(KeyCode.LeftArrow))	{
+			if(InputLeft.Value)	{
 				steerInput = 1;
 			}
-			else if(Input.GetKey(KeyCode.RightArrow)) {
+			else if(InputRight.Value) {
 				steerInput = -1;
 			}
 
@@ -247,10 +251,10 @@ public class Car : MonoBehaviour {
 		Engine.UpdateAutomaticTransmission (Rigidbody2D);
 
         // Update camera
-        if (IsPlayerControlled)
-        {
-            CameraView.transform.position = this.transform.position;
-        }
+        //if (IsPlayerControlled)
+        //{
+        //    CameraView.transform.position = this.transform.position;
+        //}
 	}
 			
 	void FixedUpdate() {
