@@ -4,8 +4,10 @@ using WildbotLabs.Scriptables.References;
 public class Car : MonoBehaviour
 {
 
-    [SerializeField] private BoolReference InputRight;
-    [SerializeField] private BoolReference InputLeft;
+    [SerializeField] public BoolReference InputRight;
+    [SerializeField] public BoolReference InputLeft;
+    [SerializeField] public BoolReference InputForward;
+    [SerializeField] public BoolReference InputBackward;
 
 	[SerializeField]
 	bool IsPlayerControlled = false;
@@ -172,11 +174,11 @@ public class Car : MonoBehaviour
 			Brake = 0;
 			EBrake = 0;
 
-			if (Input.GetKey (KeyCode.UpArrow)) {
-				Throttle = 1;
-			} else if (Input.GetKey (KeyCode.DownArrow)) { 
-				//Brake = 1;
+			if (InputBackward.Value) {
 				Throttle = -1;
+			} else if (InputForward.Value) { 
+				//Brake = 1;
+				Throttle = 1;
 			} 
 			if(Input.GetKey(KeyCode.Space))	{
 				EBrake = 1;
