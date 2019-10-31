@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 7216521518917302108}
   - component: {fileID: 7216521518917302109}
   - component: {fileID: 7216521518917302106}
+  - component: {fileID: 1372755241}
   m_Layer: 0
   m_Name: BaseCar
   m_TagString: Untagged
@@ -397,6 +398,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e26dfb546b01c49800c6bd2ab66c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputRight:
+    _useConstant: 1
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: c7eba07e565af5842aace22f7fe64353, type: 2}
+    DebugEnabled: 1
+  InputLeft:
+    _useConstant: 1
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 247ef7186db6b5b42b61862af205b59a, type: 2}
+    DebugEnabled: 1
+  InputForward:
+    _useConstant: 1
+    _constantValue: 0
+    _variable: {fileID: 0}
+    DebugEnabled: 1
+  InputBackward:
+    _useConstant: 1
+    _constantValue: 0
+    _variable: {fileID: 0}
+    DebugEnabled: 1
   IsPlayerControlled: 1
   CGHeight: 0.55
   InertiaScale: 1
@@ -417,6 +438,39 @@ MonoBehaviour:
   SpeedSteerCorrection: 295
   SpeedTurningStability: 11.8
   AxleDistanceCorrection: 1.7
+--- !u!114 &1372755241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7216521518917302110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8e0510a7a71d242a20e6e1567b404d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Car: {fileID: 7216521518917302106}
+  InputRight:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: c7eba07e565af5842aace22f7fe64353, type: 2}
+    DebugEnabled: 1
+  InputLeft:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 247ef7186db6b5b42b61862af205b59a, type: 2}
+    DebugEnabled: 1
+  InputForward:
+    _useConstant: 1
+    _constantValue: 1
+    _variable: {fileID: 0}
+    DebugEnabled: 1
+  InputBackward:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: d662b4140800af34a9b230498d0cf246, type: 2}
+    DebugEnabled: 1
 --- !u!1 &7216521518942362278
 GameObject:
   m_ObjectHideFlags: 0
