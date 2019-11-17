@@ -11,7 +11,14 @@ namespace WildbotLabs.Scriptables.Components
         // Update is called once per frame
         void Update()
         {
-            _value.SetValue(Input.GetKey(_inputKey));
+            if (Input.GetKeyDown(_inputKey))
+            {
+                _value.SetValue(true);
+            }
+            else if (Input.GetKeyUp(_inputKey))
+            {
+                _value.SetValue(false);
+            }
         }
     }
 }

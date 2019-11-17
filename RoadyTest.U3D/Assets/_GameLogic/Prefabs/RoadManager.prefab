@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1623053802414375019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623053802414375017}
+  - component: {fileID: 1623053802414375016}
+  - component: {fileID: 4021225647378538881}
+  - component: {fileID: 1984002242}
+  m_Layer: 0
+  m_Name: RoadManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1623053802414375017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623053802414375019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3157684035026252122}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1623053802414375016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623053802414375019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5842b77771f26504bb7fb52bd9ef6816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Seed: 0
+  BlockWidth: 40
+  BlockHeight: 40
+  MinRoadLength: 4
+  MaxRoadLength: 10
+  FourWayRadius: 5
+--- !u!114 &4021225647378538881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623053802414375019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c4773d86e3e0f42b1b2ed60b2a09e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileMaps:
+  - Id: 1
+    Name: NorthSouth
+    TilePrefab: {fileID: 4956251203749901709, guid: cf670819d0303bf4eb5991dba1428a6d,
+      type: 3}
+    Rotation: 90
+  - Id: 2
+    Name: EastWest
+    TilePrefab: {fileID: 4956251203749901709, guid: cf670819d0303bf4eb5991dba1428a6d,
+      type: 3}
+    Rotation: 0
+  - Id: 3
+    Name: NorthEast
+    TilePrefab: {fileID: 2315381881902342361, guid: 937fe9f924567ec478984c51e1e7d241,
+      type: 3}
+    Rotation: 0
+  - Id: 4
+    Name: NorthWest
+    TilePrefab: {fileID: 2315381881902342361, guid: 937fe9f924567ec478984c51e1e7d241,
+      type: 3}
+    Rotation: 270
+  - Id: 5
+    Name: SouthEast
+    TilePrefab: {fileID: 2315381881902342361, guid: 937fe9f924567ec478984c51e1e7d241,
+      type: 3}
+    Rotation: 90
+  - Id: 6
+    Name: SouthWest
+    TilePrefab: {fileID: 2315381881902342361, guid: 937fe9f924567ec478984c51e1e7d241,
+      type: 3}
+    Rotation: 180
+  - Id: 7
+    Name: Fourway
+    TilePrefab: {fileID: 1820289204149903380, guid: 25b96f8cd4844484583615d8a525881f,
+      type: 3}
+    Rotation: 0
+  - Id: 8
+    Name: T-East
+    TilePrefab: {fileID: 201429257997849706, guid: 182db5c835d3d3a4ca4fa9161d699fe6,
+      type: 3}
+    Rotation: 270
+  - Id: 9
+    Name: T-West
+    TilePrefab: {fileID: 201429257997849706, guid: 182db5c835d3d3a4ca4fa9161d699fe6,
+      type: 3}
+    Rotation: 90
+  - Id: 10
+    Name: T-North
+    TilePrefab: {fileID: 201429257997849706, guid: 182db5c835d3d3a4ca4fa9161d699fe6,
+      type: 3}
+    Rotation: 180
+  - Id: 11
+    Name: T-South
+    TilePrefab: {fileID: 201429257997849706, guid: 182db5c835d3d3a4ca4fa9161d699fe6,
+      type: 3}
+    Rotation: 0
+  - Id: 12
+    Name: NorthEnd
+    TilePrefab: {fileID: 5657199863985366850, guid: 7974fe5d4bb8f3a4ab28fa2c6c2eccb7,
+      type: 3}
+    Rotation: 270
+  - Id: 13
+    Name: EastEnd
+    TilePrefab: {fileID: 5657199863985366850, guid: 7974fe5d4bb8f3a4ab28fa2c6c2eccb7,
+      type: 3}
+    Rotation: 0
+  - Id: 14
+    Name: SouthEnd
+    TilePrefab: {fileID: 5657199863985366850, guid: 7974fe5d4bb8f3a4ab28fa2c6c2eccb7,
+      type: 3}
+    Rotation: 90
+  - Id: 15
+    Name: WestEnd
+    TilePrefab: {fileID: 5657199863985366850, guid: 7974fe5d4bb8f3a4ab28fa2c6c2eccb7,
+      type: 3}
+    Rotation: 180
+--- !u!114 &1984002242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623053802414375019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c275a0646fdab40b2b03dd5bdb8f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Generator: {fileID: 1623053802414375016}
+  TileMappings: {fileID: 4021225647378538881}
+  RoadRoot: {fileID: 8705961104729621603}
+  TopLeft: {x: 0, y: 0, z: 0}
+  CellSize: {x: 20, y: 20}
+--- !u!1 &8705961104729621603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3157684035026252122}
+  m_Layer: 0
+  m_Name: RoadRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3157684035026252122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8705961104729621603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1623053802414375017}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
