@@ -12,13 +12,22 @@ namespace WildbotLabs.Scriptables.Components
 
         private int _lastValue = int.MinValue;
 
+        void Start()
+        {
+            Reset();
+        }
+
         // Update is called once per frame
         void Update ()
         {
-            if (_text != null && _value != null && _lastValue != _value.Value)
+            if (_value != null && _lastValue != _value.Value)
             {
                 _lastValue = _value.Value;
-                _text.text = string.Format(_format, _lastValue);
+
+                if (_text != null)
+                {
+                    _text.text = string.Format(_format, _lastValue);
+                }
             }
         }
 

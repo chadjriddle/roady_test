@@ -54,6 +54,7 @@ namespace WildbotLabs.CodeGenerator.Editor
         }
 
         private static readonly Regex ClassNameRegEx = new Regex(@"(?<=^[^']*\bclass\s)(?<class>\b\w*)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.Multiline);
+        private static readonly Regex EnumNameRegEx = new Regex(@"(?<=^[^']*\benum\s)(?<enum>\b\w*)", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.Multiline);
         private static readonly Regex NamespaceRegEx = new Regex(@"(?<=^[^']*\bnamespace\s)(?<namespace>\b[.\w]+\.(\w+))", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
         public static string ExtractClassName(string classText)
@@ -64,7 +65,13 @@ namespace WildbotLabs.CodeGenerator.Editor
                 return result.Value;
             }
 
-            throw new Exception("Unable to find Class Name");
+            result = EnumNameRegEx.Match(classText);
+            if (result.Success)
+            {
+                return result.Value;
+            }
+
+            throw new Exception("Unable to find Class/Enum Name");
         }
 
         public static string ExtractNameSpace(string classText)

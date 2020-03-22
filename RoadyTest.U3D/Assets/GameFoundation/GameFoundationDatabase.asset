@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5704000478176852599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88f5bccd054f984d9be6ad05294da40, type: 3}
+  m_Name: _Catalog_Stats
+  m_EditorClassIdentifier: 
+  m_StatDefinitions: []
+--- !u!114 &-3752639042614557352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7bd278f724ab94d891fb484af87b44, type: 3}
+  m_Name: _Catalog_GameItems
+  m_EditorClassIdentifier: 
+  m_Categories: []
+  m_Definitions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d6d794703b5406883240f543e5b084, type: 3}
+  m_Name: GameFoundationDatabase
+  m_EditorClassIdentifier: 
+  m_GameItemCatalog: {fileID: -3752639042614557352}
+  m_InventoryCatalog: {fileID: 5912821230044645096}
+  m_StatCatalog: {fileID: -5704000478176852599}
+--- !u!114 &4494641596100386623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a121bc2d8644fcb8f5f5ed98363908, type: 3}
+  m_Name: main_Inventory
+  m_EditorClassIdentifier: 
+  m_DisplayName: Main
+  m_Id: main
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+  m_DefaultItems: []
+--- !u!114 &5912821230044645096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b084f2c338a4185ab8badeed2a3947, type: 3}
+  m_Name: _Catalog_Inventories
+  m_EditorClassIdentifier: 
+  m_Categories: []
+  m_CollectionDefinitions:
+  - {fileID: 4494641596100386623}
+  - {fileID: 7583987149196312101}
+  m_ItemDefinitions: []
+  m_DefaultCollectionDefinitions: []
+--- !u!114 &7583987149196312101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a121bc2d8644fcb8f5f5ed98363908, type: 3}
+  m_Name: wallet_Inventory
+  m_EditorClassIdentifier: 
+  m_DisplayName: Wallet
+  m_Id: wallet
+  m_ReferenceDefinition: {fileID: 0}
+  m_CategoryHashes: 
+  m_CategoryIds: []
+  m_DetailDefinitionValues: []
+  m_DefaultItems: []

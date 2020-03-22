@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_GameLogic/Scenes/DriveTest.unity
     guid: f32410b0160d674479a8b3591e96bcb4
+  - enabled: 0
+    path: Assets/_GameLogic/Scenes/MainGame.unity
+    guid: fc4c4897659654e428f148a2de3b79e4
+  - enabled: 1
+    path: Assets/_GameLogic/Scenes/CustomRCCTest.unity
+    guid: 30019d5ee244996479c286688ef5eb37
   m_configObjects: {}
